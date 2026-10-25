@@ -180,15 +180,8 @@
                 <button onclick="filterEvents('all')" id="btn-all" class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-600 text-white transition-all shadow-md">
                     All Events
                 </button>
-                <button onclick="filterEvents('ee')" id="btn-ee" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">
-                    Employability & Entrepreneurship
-                </button>
-                <button onclick="filterEvents('peace')" id="btn-peace" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">
-                    Social & Global Awareness
-                </button>
             </div>
         </section>
-
         <!-- Events Grid -->
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="events-grid">
             <!-- Rendered dynamically -->
@@ -266,8 +259,8 @@
                 organizer: 'Office of Employability and Entrepreneurship',
                 certImage: 'ideation.jpg',
                 interest: 'Discover method and a way to think to start a business.',
-                takeaway: 'Strong business ideas are built step by step through collaboration, mind mapping, and refining initial assumptions.',
-                reflection: 'I now apply structured brainstorming techniques to my academic projects, allowing my team to solve complex problems faster.'
+                takeaway: 'Don’t start with the idea (solution) but with the problem.',
+                reflection: 'Now I understand that you always need to start with writing the problem clearly, not to start with finding a solution when you don’t understand the problem.'
             },
             {
                 id: 'customer-discovery',
@@ -280,8 +273,8 @@
                 organizer: 'Office of Employability and Entrepreneurship',
                 certImage: 'customer_discovery.jpg',
                 interest: 'Know how to define the customer and know who is the target market.',
-                takeaway: 'Validating real problem statements before building solutions saves time and ensures product-market fit.',
-                reflection: 'Active listening and asking non-biased questions have helped me improve my overall research and interview skills.'
+                takeaway: 'You need to know exactly you customer.',
+                reflection: 'I know now that in a business project you need to know who is the target customer and not just start without a target.'
             },
             {
                 id: 'find-cofounder',
@@ -294,8 +287,8 @@
                 organizer: 'Office of Employability and Entrepreneurship',
                 certImage: 'co_founder.jpg',
                 interest: 'Networking with a lot of interesting profiles and new entrepreneurship.',
-                takeaway: 'A balanced founding team requires clear communication, shared vision, and complementary technical and business skillsets.',
-                reflection: 'This workshop expanded my professional network on campus and showed me the value of cross-disciplinary collaboration.'
+                takeaway: 'You need to do networking to know other person.',
+                reflection: 'This workshop helped me to network with new people, and it showed me the value of the collaboration with a person in another discipline.'
             },
             {
                 id: 'business-model',
@@ -308,23 +301,9 @@
                 organizer: 'Office of Employability and Entrepreneurship',
                 certImage: 'business_model.jpg',
                 interest: 'Discover different types of business models with examples and a practice exercise.',
-                takeaway: 'A sustainable venture requires aligning cost structures directly with customer value propositions.',
-                reflection: 'I developed a clearer analytical approach to evaluating economic sustainability and operational planning.'
+                takeaway: 'A business need a model or a plan to work clearly.',
+                reflection: 'I developed a new way to think before starting a project and a way to know if a business is economically good or is a waste of time.'
             },
-            {
-                id: 'ee-festival',
-                title: 'E&E Festival',
-                date: 'October 2026',
-                location: 'Between Building 4 and Mosque',
-                category: 'ee',
-                categoryLabel: 'Employability & Entrepreneurship',
-                icon: 'fa-champagne-glasses',
-                organizer: 'Office of Employability and Entrepreneurship',
-                certImage: 'ee_festival.jpg',
-                interest: 'Discover the Office of Employability and Entrepreneurship with interactive games and activities.',
-                takeaway: 'Entrepreneurial ecosystems thrive on active participation, peer learning, and community engagement.',
-                reflection: 'The festival inspired me to take proactive steps in campus student initiatives and explore practical project execution.'
-            }
         ];
 
         function renderEvents(filter = 'all') {
